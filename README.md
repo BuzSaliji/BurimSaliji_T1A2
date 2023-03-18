@@ -32,3 +32,4 @@ Header has img name and navigation bar. Here is the coed for the header we have.
     </header>
 ```# BuzSaliji-T1W2D3-company
 # BurimSaliji_T1A2
+# BurimSaliji_T1A2
