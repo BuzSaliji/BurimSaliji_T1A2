@@ -1,5 +1,6 @@
 $primary-background: #f95959;
 $secondary-background: #e3e3e3;
+$text-color: #455d7a;
 
 
 header {
@@ -8,7 +9,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f95959;
+    background-color: $primary-background;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 
@@ -20,17 +21,20 @@ header {
      }
 
      .pic img:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
      }
-
-     
 
      .name {
         font-size: 32px;
         text-align: center;
-        color: #455d7a;
+        color: $text-color;
         margin-bottom: 48px;
         font-family: Arial, Helvetica, sans-serif;
+        transition: transform 2s ease-in-out;
+    }
+
+    .name:hover {
+        transform: scale(1.2)
     }
 
     .nav-items {
@@ -44,17 +48,13 @@ header {
         
         a {
             text-decoration: none;
-            color: #455d7a;
+            color: $text-color;
             font-family: Arial, Helvetica, sans-serif;
         }
     }
     
     
 }
-
-
-
-
 
 body {
     margin: 0;
@@ -67,20 +67,22 @@ body {
 }
 
 footer {
-    background-color: #f95959;
+    background-color: $primary-background;
     padding: 16px;
     text-align: center;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 
     .social-media {
-         color: #455d7a;
-         width: 100%;
+        width: 100%;
+        color: $text-color;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     .info {
         font-size: 18px;
-        color: #455d7a;
+        color: $text-color;
         font-family: Arial, Helvetica, sans-serif;
     
     }
