@@ -11,8 +11,8 @@ header .pic {
 }
 header img {
   padding: 16px;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   transition: transform 2s ease-in-out;
 }
@@ -27,7 +27,7 @@ header .centered {
 }
 header .centered .name {
   padding: 16px;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   color: #455d7a;
   font-family: Arial, Helvetica, sans-serif;
@@ -46,6 +46,33 @@ header .centered .nav-items a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header .pic img {
+    height: 175px;
+    width: 175px;
+  }
+  .name {
+    font-size: 24px;
+  }
+  .nav-items {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header .pic img {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .name {
+    font-size: 28px;
+  }
+  .nav-items {
+    width: 50%;
+  }
+}
 body {
   margin: 0;
   background-color: #e3e3e3;
@@ -67,9 +94,6 @@ footer .social-media {
   color: #455d7a;
   align-items: center;
   justify-content: space-between;
-}
-footer .social-media .social-media a:first-child {
-  margin-right: 16px;
 }
 footer .info {
   font-size: 18px;
