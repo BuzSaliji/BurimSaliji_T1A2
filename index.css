@@ -1,14 +1,16 @@
 header {
-  position: relative;
-  padding: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #f95959;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-header .pic img {
+header .pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  padding: 16px;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -17,27 +19,28 @@ header .pic img {
 header .pic img:hover {
   transform: scale(1.1);
 }
-header .name {
-  font-size: 32px;
+header .centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .centered .name {
+  padding: 16px;
+  font-size: 24px;
   text-align: center;
   color: #455d7a;
-  margin-bottom: 48px;
   font-family: Arial, Helvetica, sans-serif;
-  transition: transform 2s ease-in-out;
 }
-header .name:hover {
-  transform: scale(1.2);
-}
-header .nav-items {
-  position: absolute;
-  padding: 8px;
-  bottom: 0;
+header .centered .nav-items {
   width: 50%;
+  padding: 16px;
   display: flex;
-  justify-content: space-around;
-  font-size: 24px;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 18px;
 }
-header .nav-items a {
+header .centered .nav-items a {
   text-decoration: none;
   color: #455d7a;
   font-family: Arial, Helvetica, sans-serif;
@@ -47,7 +50,6 @@ body {
   margin: 0;
   background-color: #e3e3e3;
   min-height: 100vh;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -64,7 +66,10 @@ footer .social-media {
   width: 100%;
   color: #455d7a;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+footer .social-media .social-media a:first-child {
+  margin-right: 16px;
 }
 footer .info {
   font-size: 18px;
