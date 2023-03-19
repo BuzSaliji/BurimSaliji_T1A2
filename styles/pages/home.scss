@@ -1,0 +1,21 @@
+@import "../defaults/color";
+
+main {
+    section {
+      .intro-pic {
+        img {
+        height: 300px;
+        width: 100%;
+        border-radius: 10px;
+        border-bottom: 2px solid $primary-color;
+      }
+      }
+  
+      .details {
+        display: flex;
+        text-align: center;
+        font-size: 18px;
+        color: $primary-color;
+      }
+    }
+  }

@@ -1,0 +1,12 @@
+main section .intro-pic img {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  border-bottom: 2px solid #455d7a;
+}
+main section .details {
+  display: flex;
+  text-align: center;
+  font-size: 18px;
+  color: #455d7a;
+}/*# sourceMappingURL=home.css.map */
