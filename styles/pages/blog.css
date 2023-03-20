@@ -1,0 +1,40 @@
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main article {
+  border: 1px solid #455d7a;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0px;
+  padding: 24px;
+  text-align: center;
+  background-color: #16213E;
+}
+main article section .html-image {
+  width: 350px;
+  border-radius: 16px;
+}
+main article section .css-image {
+  width: 350px;
+  border-radius: 16px;
+}
+main article section .java-image {
+  width: 350px;
+  border-radius: 16px;
+}
+main article section .python-image {
+  width: 350px;
+  border-radius: 16px;
+}
+main article section h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #f95959;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=blog.css.map */

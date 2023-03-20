@@ -1,0 +1,51 @@
+@import "../defaults/color";
+@import "../defaults/breakpoints";
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    article {
+        border: 1px solid $primary-color;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 20px 0px;
+        padding: 24px;
+        text-align: center;
+        background-color: $secondary-color;
+
+        section {
+            .html-image {
+                width: 350px;
+                border-radius: 16px;
+            }
+
+            .css-image {
+                width: 350px;
+                border-radius: 16px;
+            }
+
+            .java-image {
+                width: 350px;
+                border-radius: 16px;
+            }
+
+            .python-image {
+                width: 350px;
+                border-radius: 16px;
+            }
+
+            h3 {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: $primary-background;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $medium) {
+    main {
+        justify-content: space-around;
+    }
+}

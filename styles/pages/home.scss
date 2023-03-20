@@ -11,9 +11,9 @@ main {
       }
       }
   
-      .details {
+      p {
         display: flex;
-        text-align: center;
+        justify-content: center;
         font-size: 18px;
         color: $primary-color;
       }
