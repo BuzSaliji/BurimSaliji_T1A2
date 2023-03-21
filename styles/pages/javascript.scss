@@ -1,0 +1,53 @@
+@import "../defaults/color";
+@import "../defaults/breakpoints";
+
+main {
+    display: flex;
+    justify-content: center;
+
+    article {
+        border: 1px solid $primary-color;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 20px;
+        padding: 24px;
+        text-align: center;
+        background-color: $secondary-color;
+
+        section {
+            .java-image {
+                width: 350px;
+                border-radius: 16px;
+            }
+
+            h3 {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: $primary-background;
+            }
+
+            p {
+                color: $secondary-background;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                margin: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $small) {
+    article {
+        padding: 16px;
+    }
+}
+
+@media screen and (min-width: $medium) {
+    article {
+        padding: 24px 32px;
+    }
+}
+
+@media screen and (min-width: $large) {
+    article {
+        padding: 32px;
+    }
+}

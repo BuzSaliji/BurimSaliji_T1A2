@@ -10,7 +10,7 @@ main {
         border: 1px solid $primary-color;
         border-radius: 10px;
         overflow: hidden;
-        margin: 20px 0px;
+        margin: 30px 0px;
         padding: 24px;
         text-align: center;
         background-color: $secondary-color;
@@ -44,8 +44,46 @@ main {
     }
 }
 
-@media screen and (min-width: $medium) {
-    main {
-        justify-content: space-around;
+@media screen and (max-width: $small) {
+    main article section .html-image,
+    main article section .css-image,
+    main article section .java-image,
+    main article section .python-image {
+      width: 100%;
     }
-}
+  }
+
+  @media screen and (min-width: $medium) {
+    main {
+      justify-content:space-around;
+    }
+    
+    main article {
+      margin: 10px 0;
+      width: 48%;
+    }
+  
+    main article section .html-image,
+    main article section .css-image,
+    main article section .java-image,
+    main article section .python-image {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: $large) {
+    main {
+      justify-content: space-around;
+    }
+    
+    main article {
+      width: 31%;
+    }
+  
+    main article section .html-image,
+    main article section .css-image,
+    main article section .java-image,
+    main article section .python-image {
+      width: 100%;
+    }
+  }
