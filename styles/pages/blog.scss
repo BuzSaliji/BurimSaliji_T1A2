@@ -10,7 +10,7 @@ main {
         border: 1px solid $primary-color;
         border-radius: 10px;
         overflow: hidden;
-        margin: 30px 0px;
+        margin: 20px;
         padding: 24px;
         text-align: center;
         background-color: $secondary-color;
@@ -59,8 +59,7 @@ main {
     }
     
     main article {
-      margin: 10px 0;
-      width: 48%;
+      width: 50%;
     }
   
     main article section .html-image,
@@ -73,7 +72,7 @@ main {
 
   @media screen and (min-width: $large) {
     main {
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
     
     main article {

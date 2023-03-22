@@ -14,6 +14,7 @@ header .pic {
 header .pic img {
   height: 150px;
   width: 150px;
+  border: 2px solid #455d7a;
   border-radius: 50%;
   transition: transform 2s ease-in-out;
 }
@@ -24,6 +25,7 @@ header .name {
   font-size: 24px;
   color: #455d7a;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 header .nav-items {
   margin-bottom: 12px;
@@ -36,6 +38,7 @@ header .nav-items a {
   text-decoration: none;
   color: #455d7a;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
@@ -118,7 +121,7 @@ footer .info {
   }
 }
 body {
-  margin: 0;
+  margin: 0px;
   background-color: #e3e3e3;
   min-height: 100vh;
   display: flex;

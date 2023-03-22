@@ -1,0 +1,65 @@
+@import "../defaults/color";
+@import "../defaults/breakpoints";
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    article {
+      border: 1px solid $primary-color;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 20px;
+      padding: 24px;
+      text-align: center;
+      background-color: $secondary-color;
+  
+      .section-one {
+        h2 {
+          color: $primary-background;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+  
+        p {
+          color: $secondary-background;
+        }
+      }
+  
+      .section-two {
+        img {
+          width: 300px;
+          height: 300px;
+          padding: 20px;
+        }
+      } 
+  
+      @media screen and (min-width: $medium) {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      @media screen and (min-width: $large) {
+        flex-direction: column;
+        justify-content: space-around;
+
+        .section-one {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 100%;
+          max-width: 500px;
+        }
+        
+        .section-two {
+          flex-direction: column;
+          justify-content: space-around;
+          width: 100%;
+          max-width: 500px;
+        }
+    }
+  }
+}
+        
