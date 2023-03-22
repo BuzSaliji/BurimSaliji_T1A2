@@ -33,10 +33,6 @@ main article .section-two img {
   }
 }
 @media screen and (min-width: 1024px) {
-  main article {
-    flex-direction: column;
-    justify-content: space-around;
-  }
   main article .section-one {
     flex-direction: column;
     justify-content: flex-start;

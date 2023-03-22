@@ -42,8 +42,6 @@ main {
       }
 
       @media screen and (min-width: $large) {
-        flex-direction: column;
-        justify-content: space-around;
 
         .section-one {
           flex-direction: column;
