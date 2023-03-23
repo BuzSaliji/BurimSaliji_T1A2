@@ -19,6 +19,22 @@ main article .section-one h2 {
 main article .section-one p {
   color: #e3e3e3;
 }
+main article .section-one .download-btn {
+  background-color: #f95959;
+  border: 2px solid #e3e3e3;
+  color: #e3e3e3;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+main article .section-one .download-btn a {
+  color: #e3e3e3;
+  text-decoration: none;
+}
 main article .section-two img {
   width: 300px;
   height: 300px;
@@ -33,17 +49,10 @@ main article .section-two img {
   }
 }
 @media screen and (min-width: 1024px) {
-  main article .section-one {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 500px;
-  }
-  main article .section-two {
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 500px;
+  main article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }/*# sourceMappingURL=about.css.map */

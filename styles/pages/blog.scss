@@ -36,9 +36,21 @@ main {
                 border-radius: 16px;
             }
 
+            .react-image {
+                width: 350px;
+                border-radius: 16px;
+            }
+            
+
             h3 {
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 color: $primary-background;
+            }
+
+            p {
+              color: $secondary-background;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              font-size: 12px;
             }
         }
     }
