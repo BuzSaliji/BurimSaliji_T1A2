@@ -18,10 +18,12 @@ main article .section-one h2 {
 }
 main article .section-one p {
   color: #e3e3e3;
+  white-space: pre-wrap;
 }
 main article .section-one .download-btn {
   background-color: #f95959;
   border: 2px solid #e3e3e3;
+  border-radius: 4px;
   color: #e3e3e3;
   padding: 15px 32px;
   text-align: center;
@@ -40,19 +42,11 @@ main article .section-two img {
   height: 300px;
   padding: 20px;
 }
-@media screen and (min-width: 768px) {
-  main article {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
 @media screen and (min-width: 1024px) {
   main article {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex: 1;
+  }
+  main article h2 {
+    justify-self: flex-start;
   }
 }/*# sourceMappingURL=about.css.map */

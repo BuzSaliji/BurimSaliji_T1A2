@@ -23,6 +23,7 @@ main article section p {
   color: #e3e3e3;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 20px;
+  white-space: pre-wrap;
 }
 
 @media screen and (max-width: 480px) {
