@@ -27,7 +27,15 @@ main {
                 border-radius: 4px;
                 outline: none;
                 font-size: 1.2rem;
+
+                &:not(.form-textarea) {
                 height: 28px;
+            }
+
+            &.form-textarea {
+                resize: none;
+            }
+
 
                 &:focus {
                     box-shadow: 0 0 2px 2px $primary-background;
@@ -52,6 +60,22 @@ main {
                     background-color: #455d7a90;
                 }
               }
+        }
+    }
+}
+
+@media screen and (min-width: $medium) {
+    main {
+        form {
+        
+            .form-elements {
+                flex-direction: row;
+                justify-content: space-between;
+
+                .form-input {
+                    width: 70%;
+                }
+            }
         }
     }
 }

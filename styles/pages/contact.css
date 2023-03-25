@@ -20,7 +20,12 @@ main form .form-elements .form-input {
   border-radius: 4px;
   outline: none;
   font-size: 1.2rem;
+}
+main form .form-elements .form-input:not(.form-textarea) {
   height: 28px;
+}
+main form .form-elements .form-input.form-textarea {
+  resize: none;
 }
 main form .form-elements .form-input:focus {
   box-shadow: 0 0 2px 2px #f95959;
@@ -40,4 +45,14 @@ main form .btn-div #submit {
 main form .btn-div #submit:hover {
   cursor: pointer;
   background-color: rgba(69, 93, 122, 0.5647058824);
+}
+
+@media screen and (min-width: 768px) {
+  main form .form-elements {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main form .form-elements .form-input {
+    width: 70%;
+  }
 }/*# sourceMappingURL=contact.css.map */
