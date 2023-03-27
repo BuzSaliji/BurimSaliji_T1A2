@@ -1,6 +1,9 @@
+/* import colours and breakpoints */ /* saved colours, we will use these in our imports */ /* breakpoints, we will  use these in our imports */
+/* styling for main */
 main {
   display: flex;
   justify-content: center;
+  /* styling for articles */
 }
 main article {
   border: 1px solid #455d7a;
@@ -10,6 +13,11 @@ main article {
   padding: 24px;
   text-align: center;
   background-color: #16213E;
+  /* styling for section */
+}
+main article section {
+  /* styling for H3 */
+  /* styling for paragraphs */
 }
 main article section .java-image {
   width: 350px;
@@ -26,16 +34,19 @@ main article section p {
   white-space: pre-wrap;
 }
 
+/* breakpoint for mobile */
 @media screen and (max-width: 480px) {
   article {
     padding: 16px;
   }
 }
+/* breakpoint for tablet */
 @media screen and (min-width: 768px) {
   article {
     padding: 24px 32px;
   }
 }
+/* breakpoint for desktop */
 @media screen and (min-width: 1024px) {
   article {
     padding: 32px;

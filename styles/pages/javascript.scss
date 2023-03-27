@@ -1,10 +1,13 @@
+/* import colours and breakpoints */ 
 @import "../defaults/color";
 @import "../defaults/breakpoints";
 
+/* styling for main */
 main {
     display: flex;
     justify-content: center;
-
+    
+    /* styling for articles */
     article {
         border: 1px solid $primary-color;
         border-radius: 10px;
@@ -13,18 +16,21 @@ main {
         padding: 24px;
         text-align: center;
         background-color: $secondary-color;
-
+        
+        /* styling for section */
         section {
             .java-image {
                 width: 350px;
                 border-radius: 16px;
             }
-
+            
+            /* styling for H3 */
             h3 {
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 color: $primary-background;
             }
 
+            /* styling for paragraphs */
             p {
                 color: $secondary-background;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -35,18 +41,21 @@ main {
     }
 }
 
+/* breakpoint for mobile */
 @media screen and (max-width: $small) {
     article {
         padding: 16px;
     }
 }
 
+/* breakpoint for tablet */
 @media screen and (min-width: $medium) {
     article {
         padding: 24px 32px;
     }
 }
 
+/* breakpoint for desktop */
 @media screen and (min-width: $large) {
     article {
         padding: 32px;

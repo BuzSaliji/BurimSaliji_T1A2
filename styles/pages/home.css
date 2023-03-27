@@ -1,3 +1,5 @@
+/* imports for colour and breakpoitns */ /* saved colours, we will use these in our imports */ /* breakpoints, we will  use these in our imports */
+/* styling for main, also nested styling for home and intro pics */
 main .home {
   display: flex;
   flex-wrap: wrap;
@@ -10,6 +12,7 @@ main .home .intro-pic-three {
   margin: 10px;
   flex-basis: 300px;
   flex-shrink: 0;
+  /* styling for images */
 }
 main .home .intro-pic img,
 main .home .intro-pic-two img,
@@ -21,6 +24,7 @@ main .home .intro-pic-three img {
 }
 main .home .details {
   text-align: center;
+  /* styling for my H1 header */
 }
 main .home .details h1 {
   font-size: 32px;
@@ -29,6 +33,7 @@ main .home .details h1 {
   margin: 24px;
 }
 
+/* styling for mobile breakpoint */
 @media (max-width: 480px) {
   .home .intro-pic,
   .home .intro-pic-two,
@@ -36,6 +41,7 @@ main .home .details h1 {
     flex-basis: 100%;
   }
 }
+/* styling for tablet breakpoints */
 @media (max-width: 768px) {
   .home .intro-pic,
   .home .intro-pic-two,
@@ -43,6 +49,7 @@ main .home .details h1 {
     flex-basis: calc(50% - 20px);
   }
 }
+/*styling for desktop breakpoits */
 @media (min-width: 1024px) {
   .home .intro-pic,
   .home .intro-pic-two,

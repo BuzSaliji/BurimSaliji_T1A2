@@ -1,3 +1,4 @@
+/* saved colours, we will use these in our imports */ /* breakpoints, we will  use these in our imports */
 main {
   display: flex;
   flex-direction: column;
@@ -14,6 +15,7 @@ main form .form-elements {
 }
 main form .form-elements label {
   font-size: 1.2rem;
+  color: #455d7a;
 }
 main form .form-elements .form-input {
   border: 1px solid #455d7a;
@@ -36,6 +38,7 @@ main form .btn-div {
 main form .btn-div #submit {
   height: 32px;
   min-width: 120px;
+  margin-bottom: 16px;
   background-color: #455d7a;
   color: #e3e3e3;
   border: none;

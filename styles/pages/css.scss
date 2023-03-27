@@ -1,10 +1,13 @@
+/* imports for colours and breakpoints */
 @import "../defaults/color";
 @import "../defaults/breakpoints";
 
+/* styling for main */
 main {
     display: flex;
     justify-content: center;
 
+    /* styling for article */
     article {
         border: 1px solid $primary-color;
         border-radius: 10px;
@@ -14,6 +17,7 @@ main {
         text-align: center;
         background-color: $secondary-color;
 
+        /* styling for section with image, h3 and P nested within */
         section {
             .css-image {
                 width: 350px;
@@ -35,18 +39,21 @@ main {
     }
 }
 
+/*breakpoint for mobile */
 @media screen and (max-width: $small) {
     article {
         padding: 16px;
     }
 }
 
+/* breakpoint for tablet */
 @media screen and (min-width: $medium) {
     article {
         padding: 24px 32px;
     }
 }
 
+/* breakpoint for desktop */
 @media screen and (min-width: $large) {
     article {
         padding: 32px;

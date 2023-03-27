@@ -1,10 +1,13 @@
+/* imported breakpoints and colours */
 @import "../defaults/color";
 @import "../defaults/breakpoints";
 
+/*styling for my main seciton */
 main {
     display: flex;
     justify-content: center;
-
+    
+    /* added styling for the article */
     article {
         border: 1px solid $primary-color;
         border-radius: 10px;
@@ -13,18 +16,21 @@ main {
         padding: 24px;
         text-align: center;
         background-color: $secondary-color;
-
+        
+        /* styling for my image */
         section {
             .react-image {
                 width: 350px;
                 border-radius: 16px;
             }
-
+            
+            /* added style for my h3 header */
             h3 {
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 color: $primary-background;
             }
-
+            
+            /* added some style for my p tag */
             p {
                 color: $secondary-background;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -34,19 +40,21 @@ main {
         }
     }
 }
-
+/* media breakpoints for mobile */
 @media screen and (max-width: $small) {
     article {
         padding: 16px;
     }
 }
 
+/* media breakpoint for tablet */
 @media screen and (min-width: $medium) {
     article {
         padding: 24px 32px;
+        width: 100%;
     }
 }
-
+ /*media breakpoint for desktop */
 @media screen and (min-width: $large) {
     article {
         padding: 32px;

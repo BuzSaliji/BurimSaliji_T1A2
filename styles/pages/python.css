@@ -1,6 +1,9 @@
+/* imported colour and breakpoints */ /* saved colours, we will use these in our imports */ /* breakpoints, we will  use these in our imports */
+/* styling for my main section */
 main {
   display: flex;
   justify-content: center;
+  /* styling for my article section */
 }
 main article {
   border: 1px solid #455d7a;
@@ -10,6 +13,11 @@ main article {
   padding: 24px;
   text-align: center;
   background-color: #16213E;
+  /* styling for my image */
+}
+main article section {
+  /* colour and font styling for my h3 */
+  /* colour and font styling for my paragraph, also added some margin */
 }
 main article section .python-image {
   width: 350px;
@@ -26,16 +34,19 @@ main article section p {
   white-space: pre-wrap;
 }
 
+/* media breakpoint for mobile */
 @media screen and (max-width: 480px) {
   article {
     padding: 16px;
   }
 }
+/* media breakpoint for tablet */
 @media screen and (min-width: 768px) {
   article {
     padding: 24px 32px;
   }
 }
+/* breakpoint for desktop */
 @media screen and (min-width: 1024px) {
   article {
     padding: 32px;

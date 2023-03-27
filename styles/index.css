@@ -1,8 +1,11 @@
+/* imported componants and utilities */ /* saved colours, we will use these in our imports */ /* imports for our header */ /* saved colours, we will use these in our imports */ /* mixins will be linked to our pages */ /* breakpoints, we will  use these in our imports */
+/* styling for our header including nested elements, will be linked accross all pages */
 header {
   background-color: #f95959;
   border-bottom: 2px solid #455d7a;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  /* styling for our navigation items */
 }
 header .pic {
   padding: 16px;
@@ -73,6 +76,8 @@ header .nav-items a {
     font-size: 20px;
   }
 }
+/* imports for our footer */ /* saved colours, we will use these in our imports */ /* mixins will be linked to our pages */ /* breakpoints, we will  use these in our imports */
+/* styling for my footer including all the nested elements */
 footer {
   background-color: #f95959;
   padding: 16px;
@@ -97,6 +102,7 @@ footer .info {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* breakpoint for mobile */
 @media screen and (min-width: 480px) {
   .social-media {
     width: 100%;
@@ -104,6 +110,7 @@ footer .info {
     margin-right: auto;
   }
 }
+/* breakpoint for tablet */
 @media screen and (min-width: 768px) {
   footer .social-media {
     width: 50%;
@@ -111,6 +118,7 @@ footer .info {
     margin-right: auto;
   }
 }
+/* breakpoint for desktop */
 @media screen and (min-width: 1024px) {
   footer .social-media {
     width: 50%;
@@ -118,6 +126,7 @@ footer .info {
     margin-right: auto;
   }
 }
+/* body style this will be linked to all pages */
 body {
   margin: 0px;
   background-color: #e3e3e3;

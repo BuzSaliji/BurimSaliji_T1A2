@@ -1,7 +1,9 @@
+/* imported componants and utilities */
 @import "./defaults/color";
 @import "./components/header";
 @import "./components/footer";
 
+/* body style this will be linked to all pages */
 body {
   margin: 0px;
   background-color: $secondary-background;

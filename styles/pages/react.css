@@ -1,6 +1,9 @@
+/* imported breakpoints and colours */ /* saved colours, we will use these in our imports */ /* breakpoints, we will  use these in our imports */
+/*styling for my main seciton */
 main {
   display: flex;
   justify-content: center;
+  /* added styling for the article */
 }
 main article {
   border: 1px solid #455d7a;
@@ -10,6 +13,11 @@ main article {
   padding: 24px;
   text-align: center;
   background-color: #16213E;
+  /* styling for my image */
+}
+main article section {
+  /* added style for my h3 header */
+  /* added some style for my p tag */
 }
 main article section .react-image {
   width: 350px;
@@ -26,16 +34,20 @@ main article section p {
   white-space: pre-wrap;
 }
 
+/* media breakpoints for mobile */
 @media screen and (max-width: 480px) {
   article {
     padding: 16px;
   }
 }
+/* media breakpoint for tablet */
 @media screen and (min-width: 768px) {
   article {
     padding: 24px 32px;
+    width: 100%;
   }
 }
+/*media breakpoint for desktop */
 @media screen and (min-width: 1024px) {
   article {
     padding: 32px;

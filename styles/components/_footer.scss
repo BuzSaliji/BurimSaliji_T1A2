@@ -1,7 +1,9 @@
+/* imports for our footer */
 @import "../defaults/color";
 @import "./utils";
 @import "../defaults/breakpoints";
-  
+ 
+/* styling for my footer including all the nested elements */
 footer {
     @include background-bottom();
 
@@ -25,6 +27,7 @@ footer {
     }
 }
 
+/* breakpoint for mobile */
 @media screen and (min-width: $small) {
     .social-media {
         width: 100%;
@@ -33,6 +36,7 @@ footer {
     }
 }
 
+/* breakpoint for tablet */
 @media screen and (min-width: $medium) {
     footer {
         .social-media {
@@ -43,6 +47,7 @@ footer {
     }
 }
 
+/* breakpoint for desktop */
 @media screen and (min-width: $large) {
     footer {
         .social-media {

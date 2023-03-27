@@ -1,7 +1,9 @@
+/* imports for our header */
 @import "../defaults/color";
 @import "./utils";
 @import "../defaults/breakpoints";
 
+/* styling for our header including nested elements, will be linked accross all pages */
 header {
     @include background-top();
 
@@ -32,6 +34,7 @@ header {
         font-family: Arial, Helvetica, sans-serif;
     }
 
+    /* styling for our navigation items */
     .nav-items {
         margin-bottom: 12px;
         display: flex;

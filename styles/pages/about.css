@@ -1,3 +1,4 @@
+/* saved colours, we will use these in our imports */ /* breakpoints, we will  use these in our imports */
 main {
   display: flex;
   justify-content: center;
@@ -25,7 +26,7 @@ main article .section-one .download-btn {
   border: 2px solid #e3e3e3;
   border-radius: 4px;
   color: #e3e3e3;
-  padding: 15px 32px;
+  padding: 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
