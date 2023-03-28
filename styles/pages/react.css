@@ -44,7 +44,6 @@ main article section p {
 @media screen and (min-width: 768px) {
   article {
     padding: 24px 32px;
-    width: 100%;
   }
 }
 /*media breakpoint for desktop */

@@ -62,14 +62,15 @@
     }
     }
     
-    /*styling for desktop breakpoits */
+    /*styling for desktop breakpoints */
     @media (min-width: $large) {
     .home {
     .intro-pic,
     .intro-pic-two,
     .intro-pic-three {
-    flex-basis: calc(33.33% - 20px);
+      flex-basis: calc(33.33% - 20px);
+      }
     }
     }
-    }
+    
   
