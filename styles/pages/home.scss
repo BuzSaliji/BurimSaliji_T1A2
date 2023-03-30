@@ -14,8 +14,8 @@
       .intro-pic-two,
       .intro-pic-three {
         margin: 10px;
-        flex-basis: 300px;
-        flex-shrink: 0;
+        flex-grow: 1;
+        max-width: 40%;
   
         /* styling for images */
         img {
@@ -39,38 +39,25 @@
       }
     }
   }
+
+  /* media query for medium screens */
+@media screen and (min-width: $medium) {
+  .home .intro-pic,
+  .home .intro-pic-two,
+  .home .intro-pic-three {
+    max-width: 400px;
+  }
+}
+
+/* media query for large screens */
+@media screen and (min-width: $large) {
+  .home .intro-pic,
+  .home .intro-pic-two,
+  .home .intro-pic-three {
+    max-width: 500px;
+  }
+}
   
-  /* styling for mobile breakpoint */
-  @media (max-width: $small) {
-    .home {
-    .intro-pic,
-    .intro-pic-two,
-    .intro-pic-three {
-    flex-basis: 100%;
-    }
-    }
-    }
-    
-    /* styling for tablet breakpoints */
-    @media (max-width: $medium) {
-    .home {
-    .intro-pic,
-    .intro-pic-two,
-    .intro-pic-three {
-    flex-basis: calc(50% - 20px);
-    }
-    }
-    }
-    
-    /*styling for desktop breakpoints */
-    @media (min-width: $large) {
-    .home {
-    .intro-pic,
-    .intro-pic-two,
-    .intro-pic-three {
-      flex-basis: calc(33.33% - 20px);
-      }
-    }
-    }
+  
     
   
