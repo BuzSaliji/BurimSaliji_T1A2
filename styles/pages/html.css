@@ -37,18 +37,24 @@ main article section p {
 /* media breakpoint for mobile */
 @media screen and (max-width: 480px) {
   article {
-    padding: 16px;
+    padding: 10px;
   }
 }
 /* media breakpoint for tablet */
 @media screen and (min-width: 768px) {
   article {
-    padding: 24px 32px;
+    padding: 20px;
+  }
+  p {
+    font-size: 18px;
   }
 }
 /* media breakpoint for desktop */
 @media screen and (min-width: 1024px) {
   article {
-    padding: 32px;
+    padding: 40px;
+  }
+  p {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=html.css.map */

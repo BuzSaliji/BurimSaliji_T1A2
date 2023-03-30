@@ -50,4 +50,10 @@ main article .section-two img {
   main article h2 {
     justify-self: flex-start;
   }
+  main article p {
+    font-size: 20px;
+  }
+  main article .section-two {
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=about.css.map */

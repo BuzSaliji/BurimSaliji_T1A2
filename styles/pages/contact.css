@@ -53,7 +53,18 @@ main form .btn-div #submit:hover {
 @media screen and (min-width: 768px) {
   main form .form-elements {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 600px;
+  }
+  main form .form-elements .form-input {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main form .form-elements {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 800px;
   }
   main form .form-elements .form-input {
     width: 70%;

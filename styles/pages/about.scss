@@ -54,11 +54,23 @@ main {
         }
       } 
 
+      @media screen and (min-width: $medium) {
+        
+      }
+
       @media screen and (min-width: $large) {
         flex: 1;
 
         h2{
           justify-self: flex-start;
+        }
+
+        p {
+          font-size: 20px;
+        }
+
+        .section-two {
+          justify-content: space-between;
         }
     }
   }
