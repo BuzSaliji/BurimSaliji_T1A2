@@ -1,51 +1,130 @@
 /* imports for colour and breakpoitns */ /* saved colours, we will use these in our imports */ /* breakpoints, we will  use these in our imports */
-/* styling for main, also nested styling for home and intro pics */
+main {
+  /*Use grid layout for the home section*/
+}
 main .home {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-}
-main .home .intro-pic,
-main .home .intro-pic-two,
-main .home .intro-pic-three {
-  margin: 10px;
-  flex-grow: 1;
-  max-width: 40%;
-  /* styling for images */
-}
-main .home .intro-pic img,
-main .home .intro-pic-two img,
-main .home .intro-pic-three img {
-  width: 100%;
-  height: auto;
-  border-radius: 24px;
-  border: 1px solid #f95959;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  /*Set styles for the details section*/
+  /*Use media breakpoints to adjust grid layout for different screen sizes*/
 }
 main .home .details {
   text-align: center;
-  /* styling for my H1 header */
+  /*Set styles for the h1*/
 }
 main .home .details h1 {
-  font-size: 32px;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #455d7a;
-  margin: 24px;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 16px;
 }
-
-/* media query for medium screens */
-@media screen and (min-width: 768px) {
-  .home .intro-pic,
-  .home .intro-pic-two,
-  .home .intro-pic-three {
-    max-width: 400px;
+main .home .intro-pic {
+  /*Set styles for the img element*/
+}
+main .home .intro-pic img {
+  border: 2px solid #f95959;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+main .home .intro-pic-two {
+  /*Set styles for the img element*/
+}
+main .home .intro-pic-two img {
+  border: 2px solid #f95959;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+main .home .intro-pic-three {
+  /*Set styles for the img element*/
+}
+main .home .intro-pic-three img {
+  border: 2px solid #f95959;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  main .home {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+  }
+  main .home .intro-pic {
+    grid-row: 4;
+  }
+  main .home .intro-pic img {
+    height: 80%;
+    width: 100%;
+  }
+  main .home .intro-pic-two {
+    grid-row: 3;
+  }
+  main .home .intro-pic-two img {
+    height: 80%;
+    width: 100%;
+  }
+  main .home .intro-pic-three {
+    grid-row: 2;
+  }
+  main .home .intro-pic-three img {
+    height: 80%;
+    width: 100%;
   }
 }
-/* media query for large screens */
+@media screen and (min-width: 768px) {
+  main .home {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+  }
+  main .home .details {
+    grid-row: 1;
+    grid-column: 1/span 2;
+  }
+  main .home h1 {
+    margin-top: 0;
+  }
+  main .home .intro-pic {
+    grid-row: 2/span 2;
+    grid-column: 1;
+    padding: 12px;
+  }
+  main .home .intro-pic-two {
+    grid-row: 2;
+    grid-column: 2;
+    padding: 12px;
+  }
+  main .home .intro-pic-three {
+    grid-row: 2.5/span 2;
+    grid-column: 1;
+    padding: 12px;
+  }
+}
 @media screen and (min-width: 1024px) {
-  .home .intro-pic,
-  .home .intro-pic-two,
-  .home .intro-pic-three {
-    max-width: 500px;
+  main .home {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  main .home h1 {
+    grid-row: 1;
+    grid-column: 1/-1;
+  }
+  main .home .intro-pic {
+    grid-row: 2;
+    grid-column: 1;
+    padding: 12px;
+  }
+  main .home .intro-pic-two {
+    grid-row: 2;
+    grid-column: 2;
+    padding: 12px;
+  }
+  main .home .intro-pic-three {
+    grid-row: 2;
+    grid-column: 3;
+    padding: 12px;
   }
 }/*# sourceMappingURL=home.css.map */
