@@ -108,18 +108,24 @@ main .home .intro-pic-three img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
   }
-  main .home h1 {
-    grid-row: 1;
+  main .home .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-column: 1/-1;
+  }
+  main .home .details h1 {
+    margin-top: 0;
   }
   main .home .intro-pic {
     grid-row: 2;
-    grid-column: 1;
+    grid-column: 2;
     padding: 12px;
   }
   main .home .intro-pic-two {
     grid-row: 2;
-    grid-column: 2;
+    grid-column: 1;
     padding: 12px;
   }
   main .home .intro-pic-three {
